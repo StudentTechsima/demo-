@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .section1 .box{
+            height:200px;
+            width:100%;
+            border:2px solid #000;
+        }
+        .section2 .box{
+            height:200px;
+            width:100%;
+            background-color: rgb(64, 44, 44);
+        }
+        .box>p{
+            color:pink;
+        }
+       
+        .box~p{
+            color:aqua;
+        }
+        .box+p{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="box">
+            <p>Techsima Solution Private Limited1</p>
+            <p>Techsima Solution Private Limited12</p>
+            <p>Techsima Solution Private Limited123</p>
+            <p>Techsima Solution Private Limited1234</p>
+            <p>Techsima Solution Private Limited12345</p>
+        </div>
+        <p>Techsima Solution Private Limited</p>
+        <p>Techsima Solution Private Limited</p>
+        <p>Techsima Solution Private Limited</p>
+        <p>Techsima Solution Private Limited</p>
+        <p>Techsima Solution Private Limited</p>
+            </section>
+    <section class="section2">
+        <div class="box"></div>
+    </section>
+    
+    
+</body>
+</html>

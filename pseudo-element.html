@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+       h1{
+        background: red;
+        color:#fff;
+       } 
+       h1::after{
+            content:" Private Limited ";
+            background-color: aqua;
+            color:blue;
+       }
+       h1::before{
+        content: " Techsima ";
+        background-color: chartreuse;
+       }
+       div::after{
+            content:"";
+            height:5px;
+            width:50px;
+            background: red;
+            position: absolute;
+            top:25px;
+            left:0px;
+            opacity: 0;
+       }
+       div::before{
+            content:"";
+            height:5px;
+            width:50px;
+            background: red;
+            position: absolute;
+            top:25px;
+            left:0px;
+            opacity: 0;
+            transition: all ease 2s;
+       }
+       div:hover::after{
+            opacity: 1;
+       }
+       div:hover::before{
+            opacity: 1;
+            left:60px;
+       }
+       input{
+        color:red;
+        width:50%;
+       }
+       input[type="submit"]{
+        width:5%;
+       }
+       input::placeholder{
+        color:red;
+       }
+       p::first-line{
+        background: teal;
+        color:#fff;
+        font-size: 2rem;
+       }
+       p::first-letter{
+        font-size: 4rem;
+        background-color: navy;
+       }
+       p::marker{
+        background: yellow;
+       }
+       p::selection{
+        background: teal;
+        color:red;
+       }
+
+    </style>
+</head>
+<body>
+    <div>Code your way </div>
+    <h1>Solution</h1>
+    <input type="text" placeholder="enter you name">
+    <input type="email" >
+    <input type="submit">
+    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio culpa quidem voluptatem quia dolores dignissimos, tempora ab ipsam, ea ut animi reprehenderit deserunt iste illo. Ipsum nesciunt ullam aut recusandae nisi nihil consectetur iure quas cupiditate tempore! Exercitationem sunt dolores praesentium animi repellat minima, officia fuga. Ad laborum ipsa vel unde explicabo culpa, placeat fugit facere numquam fugiat, nostrum dignissimos rem, beatae illum doloremque perspiciatis suscipit. Quas dolor vitae eaque est illum minima consequatur, neque, necessitatibus maxime asperiores, a harum dignissimos assumenda culpa optio voluptas nostrum placeat explicabo corrupti porro ut. Dolorem numquam delectus, dolore necessitatibus nihil praesentium sint?</P>
+</body>
+</html>

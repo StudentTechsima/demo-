@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+            width: 100%;
+            border:2px solid #000;
+            border-collapse: collapse;
+        }
+        .topheader{
+            height:40px;
+            background-color: red;
+        }
+        .header{
+            height:80px;
+            background-color: aqua;
+        }
+        .logo{
+            height:100%;
+        }
+        .navbar{
+            height:100%;
+        }
+        .hero{
+            height:500px;
+        }
+        td{
+            border:2px solid #000;
+        }
+        .hero-content{
+            width:50%;
+        }
+        .hero-image{
+            width:100%;
+            height:500px;
+        }
+        .hero-image img{
+            height:100%;
+            width:100%;
+            object-fit: fill;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+        <tr class="topheader">
+            <td>1</td> 
+            <td colspan="2">1</td>   
+            <td>1</td> 
+        </tr>
+        <tr class="header">
+            <td class="logo">1</td> 
+            <td class="navbar" colspan="3">1</td> 
+            
+        </tr>
+        <tr class="hero">
+            <td colspan="2" class="hero-content">
+                <h1>CODE YOUR WAY UP TO THE PEAK</h1>
+                <p>At Techsima, we aim to enhace your coding skills to compete with the
+                fast-changing digital space, and soar your career to new heights.
+                Techsima is also your one-stop solution for all your technical problems.</p>
+                <a href="#">Read More</a>
+
+            </td> 
+            <td colspan="2" class="hero-image">
+                <img src="images/11.jpg">
+            </td> 
+            
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
